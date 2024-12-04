@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api/index.go"
+        }
+    ],
+    "regions": [
+        "fra1"
+    ],
+    "build": {
+        "env": {
+            "GO_BUILD_FLAGS": "-ldflags '-s -w'"
+        }
+    }
+}
